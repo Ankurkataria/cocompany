@@ -1,0 +1,212 @@
+/*your custom css goes here*/
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ahmad css */
+.object-fit {
+    object-fit: cover;
+}
+.show-input .show-input-none {
+    display: none;
+}
+.show-input .show-input-none.active {
+    display: block !important;
+}
+
+#siteseal img {
+    border-radius: 0.2rem;
+}
+
+.hover-menu .show-hover-menu {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    position: absolute;
+}
+
+.hover-menu:hover .show-hover-menu {
+    display: block;
+    position: absolute;
+    box-shadow: 0px 3px 3px 0px #e1d3b861;
+    visibility: visible;
+    opacity: 1;
+}
+.show-hover-menu ul {
+    list-style: none;
+    padding: 10px 20px;
+    line-height: 2;
+    text-align: start;
+}
+
+.first-li .show-nested-menu {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    color: black;
+    box-shadow: 0px 3px 3px 0px #e1d3b861;
+    background: white;
+}
+
+.show-hover-menu .first-li {
+    color: black;
+    font-weight: 700;
+}
+.show-hover-menu .first-li:hover {
+    color: var(--primary);
+    transition: all 0.2s;
+}
+
+.first-li:hover .show-nested-menu {
+    display: block;
+    /* position: absolute; */
+    /* z-index: -1; */
+    visibility: visible;
+    opacity: 1;
+}
+.header_sub {
+    cursor: pointer;
+}
+
+/* mobile-navbar */
+.sidenav #category_id,
+#category_subid {
+    display: none;
+}
+
+.sidenav #category_id ul,
+#category_subid ul {
+    list-style: none;
+    padding: 10px 20px;
+    line-height: 2;
+    margin-bottom: 0 !important;
+    text-align: start;
+}
+
+.sidenav .first-li:hover .show-nested-menu {
+    position: relative !important;
+    right: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.sidenav .hover-menu {
+    border-bottom: 1px solid #fff3;
+}
+.sidenav .hover-menu:last-child {
+    border-bottom: 0;
+}
+.sidenav .hover-menu:hover .show-hover-menu {
+    position: relative !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+.footer-css .social  {
+        display: grid;
+    gap: 10px;
+}
+
+.footer-css .social a i  {
+        width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+    color: white;
+}
+
+.footer-css .social a {
+    display:flex;
+    gap: 5px;
+    color: white;
+}
+
+.footer-css .social a.facebook i {
+  background-color: #3b5998;
+}
+
+.footer-css .social a.twitter i {
+  background-color: #1da1f2;
+}
+
+.footer-css .social a.google i {
+  background-color: #e62833;
+}
+
+.footer-css .social a.youtube i {
+  background-color: #ff0000;
+}
+
+.footer-css .social a.instagram i {
+  background-color: #bd32a2;
+}
+
+.footer-css .social a.tripadvisor i {
+  background-color: #32da9d;
+}
+
+.footer-css .social a.linkedin i {
+  background-color: #0070ac;
+}
+
+
+
+
+/* #main {
+    transition: margin-left 0.5s;
+} */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+@media (max-width: 991.98px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 991.98px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .mobile-search .front-header-search {
+        top: auto !important;
+    }
+}

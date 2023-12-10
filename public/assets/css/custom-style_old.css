@@ -1,0 +1,16 @@
+/*your custom css goes here*/
+
+/* ahmad css */
+.object-fit {
+    object-fit: cover;
+}
+.show-input .show-input-none {
+    display: none;
+}
+.show-input .show-input-none.active {
+    display: block !important;
+}
+
+#siteseal img {
+    border-radius: 0.2rem;
+}

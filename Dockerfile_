@@ -1,0 +1,15 @@
+FROM php:7.4-apache
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli && a2enmod rewrite
+# RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip
+
+#&& a2enmod proxy && a2enmod proxy_http && a2enmod proxy_balancer && a2enmod lbmethod_byrequests
+RUN pecl install mongodb && docker-php-ext-enable mongodb
